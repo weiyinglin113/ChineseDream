@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/login_style.css"> -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/button.css">
+</head>
+
+<body style="padding: 15px">
+
+
+
+    <!-- // 导航条组件 -->
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://www.gdou.edu.cn/">共筑中国梦！</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="guojiafuqiang.html">国家富强</a></li>
+                    <li><a href="minzufuxin.html">民族复兴</a></li>
+                    <li><a href="renminxingfu.html">人民幸福</a></li>
+                    <li><a href="https://www.bilibili.com/video/BV16f4y1i7tR/">和谐社会</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="一键带您查找">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="color: red !important;"><a target="_blank">当前时间：</a></li>
+                    <li><a target="_blank">
+                            <div id="datetime">
+                                <script>
+                                    setInterval("document.getElementById('datetime').innerHTML=+new Date().toLocaleString();", 1000);
+                                </script>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a target="_blank">
+                            <div id="hid">
+                                <script>//创建一个日期对象
+                                    var dd = new Date();
+                                    var st = document.getElementById("hid");
+                                    var hour = dd.getHours();//获取当前时
+                                    //alert(hour);
+                                    if (hour > 0 && hour <= 6) {
+                                        st.innerHTML = "该休息了！";
+                                    } else if (hour > 6 && hour <= 9) {
+                                        st.innerHTML = "上午好！";
+                                    } else if (hour > 9 && hour <= 12) {
+                                        st.innerHTML = "早上好！";
+                                    } else if (hour > 12 && hour <= 15) {
+                                        st.innerHTML = "中午好！";
+                                    } else if (hour > 15 && hour <= 18) {
+                                        st.innerHTML = "下午好！";
+                                    } else if (hour > 18 && hour <= 21) {
+                                        st.innerHTML = "傍晚好！";
+                                    } else if (hour > 21 && hour <= 24) {
+                                        st.innerHTML = "晚上好！";
+                                    }</script>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a target="_blank">亲爱的用户：</a></li>
+
+
+
+                    <li class="grid"><a href="login.html"><button id="grid1"><span>退出登录</span></button></a></li>
+                </ul>
+                <!-- <form action=" #" method="post">
+                    <div id="bigBox">
+                        <h1 class="h1">LOGIN</h1>
+                        <div class="inputBox">
+                            <div class="inputText">
+                                <input type="text" placeholder="请输入用户名" required name="username">
+                            </div>
+                            <div class="inputText">
+                                <input type="password" placeholder="请输入密码" required name="password">
+                            </div>
+                            <div class="inputButton">
+                                <input type="submit" class="inputButton-left" value="登录">
+                                <input type="submit" class="inputButton-right" value="关闭">
+                            </div>
+
+                        </div>
+                    </div>
+                </form> -->
+                <script src="js/index.js"></script>
+                <div class="bg"></div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- 轮播图 -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" id="carousel-example-generic" data-ride="carousel" data-interval="1500">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/国家富强.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="images/民族复兴.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="images/人民幸福.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/和谐社会.jpg">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 音乐播放 -->
+    <audio src="media/lifeline.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto"
+        style="display: none"></audio>
+
+
+    <div id="footer">Copyright ©版权所有：魏颖霖 地址：中华人民共和国 广东省 湛江市 麻章区 海大路1号 海乐B113 邮编：524088 　 </div>
+
+
+    </div>
+
+    <div id="datetime">
+        <script>
+            setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+        </script>
+    </div>
+
+</html>
+
+
+
+
+</body>
+
+</html>

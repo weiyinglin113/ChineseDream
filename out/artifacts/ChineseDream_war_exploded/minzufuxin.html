@@ -1,0 +1,2489 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>民族复兴网</title>
+    <meta name="keywords" content="民族复兴网" />
+    <meta name="description" content="民族复兴网" />
+    <!-- <link media="screen, projection" type="text/css" href="/skin/default/css/style.css" rel="stylesheet"> -->
+    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://www.mzfxw.com/skin/default/js/myfocus.min.js"></script>
+<!--    <link type="text/css" href="/skin/default/js/mf-pattern/mF_expo2010.css" rel="stylesheet">-->
+    <script type="text/javascript" src="https://www.mzfxw.com/skin/default/js/mf-pattern/mF_expo2010.js"></script>
+    <script type="text/javascript">
+        myFocus.set({
+            id: 'myFocus',
+            pattern: 'mF_expo2010',
+            time: '3',
+            trigger: 'click'
+        });
+    </script>
+    <style>
+        @charset "utf-8";
+
+        /*************
+	common
+*************/
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        form,
+        fieldset,
+        p,
+        blockquote,
+        th,
+        td {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        body {
+            font-size: 12px;
+            font-family: "微软雅黑", arial;
+            background: #f7f7f7;
+            color: #090909;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        a {
+            font-family: "Microsoft YaHei", "微软雅黑", "宋体";
+            text-decoration: none;
+            cursor: pointer;
+            color: #283C6E;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #dc1617;
+        }
+
+        fieldset,
+        img {
+            border: 0;
+        }
+
+        .clearfix {}
+
+        .clearfix:after {
+            clear: both;
+            content: " ";
+            display: block;
+            font-size: 0;
+            height: 0;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            display: inline-table;
+        }
+
+        /* Hides from IE-mac */
+        * html .clearfix {
+            height: 1%;
+        }
+
+        .clearfix {
+            display: block;
+        }
+
+        /* End hide from IE-mac */
+        /* Hides from IE7 */
+        *+html .clearfix {
+            height: 1%;
+        }
+
+        .clearfix {
+            display: block;
+        }
+
+        /* End hide from IE7 */
+
+        .clear {
+            clear: both;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+
+        .fb {
+            font-weight: bold;
+        }
+
+        .f12 {
+            font-size: 12px;
+        }
+
+        .f14 {
+            font-size: 14px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .wid {
+            width: 1000px;
+            margin: 0px auto;
+        }
+
+        /* header */
+        #topHeader {
+            height: 30px;
+        }
+
+        /**** header->top ****/
+        #header {
+            background: url("../images/index_bg.png") repeat-x;
+            padding-top: 18px;
+            margin-bottom: 5px;
+        }
+
+        #midHeader {
+            background: url("../images/head_bg.png") repeat-x;
+            height: 80px;
+        }
+
+        #midHeader #logo {
+            margin-left: 5px;
+        }
+
+        #midHeader #banner {
+            width: 500px;
+            margin-left: 80px;
+            margin-top: 3px
+        }
+
+        #midHeader #topFun {
+            margin-top: 15px;
+        }
+
+        #topFun #login {
+            margin-bottom: 10px;
+        }
+
+        #topNav {
+            background: none repeat scroll 0 0 #0A57AB;
+            height: 40px;
+        }
+
+        #topNav ul {
+            margin-right: 5px;
+        }
+
+        #topNav ul li {
+            float: left;
+            line-height: 40px;
+        }
+
+        #topNav ul li a {
+            color: #FFFFFF;
+            font-size: 16px;
+            padding: 9px 25px;
+            font-weight: bold;
+        }
+
+        #topNav ul li a:hover {
+            background: none repeat scroll 0 0 #DC1617;
+            color: #FFFFFF;
+        }
+
+        #login a {
+            margin-right: 5px;
+        }
+
+        #search {
+            width: 215px;
+        }
+
+        #keyboard {
+            border: 1px solid #ccc
+        }
+
+        #dosearch {
+            background: #0A57AB;
+            color: #fff
+        }
+
+        /*friendLink*/
+        #friendLink h2 {
+            background: #0A57AB;
+            color: #FFFFFF;
+            font-size: 15px;
+            height: 30px;
+            line-height: 30px;
+            text-indent: 10px;
+        }
+
+        #friendLink ul {
+            padding: 10px;
+        }
+
+        #friendLink li {
+            float: left;
+            width: 106px;
+            overflow: hidden;
+            height: 24px;
+            line-height: 24px;
+            margin: 5px 8px;
+            text-align: center
+        }
+
+        #friendLink a {
+            background: #e6e6e6;
+            display: block;
+            width: 106px;
+            height: 24px;
+        }
+
+        #friendLink a:hover {
+            background: #0A57AB;
+            color: #fff
+        }
+
+        /*footer*/
+        #footer {
+            height: 90px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #navbottom a {
+            color: #000
+        }
+
+        .icp {
+            margin-top: 20px
+        }
+
+
+
+        /*index->main*/
+        #main {}
+
+        .section {
+            margin-bottom: 12px;
+        }
+
+        #sectionToutiao {
+            background: #E8E8E8;
+        }
+
+        #sectionToutiao h1 {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        #sectionToutiao h1 a {
+            font-size: 35px;
+            color: #0A57AB;
+        }
+
+        #sectionToutiao .headline2 {
+            height: 36px;
+            line-height: 36px;
+            text-align: center
+        }
+
+        #sectionToutiao .headline2 a {
+            color: #444;
+            font-size: 14px;
+        }
+
+        #sectionElite #fuxing {
+            width: 240px;
+            margin-right: 15px;
+            border: 1px solid #D6D6D6;
+        }
+
+        .border {
+            border: 1px solid #D6D6D6;
+            background: #fff
+        }
+
+        .more {
+            float: right;
+            font-size: 15px;
+            font-weight: bold;
+            padding-right: 5px;
+        }
+
+        .more a {
+            color: #246BF7
+        }
+
+        .commonlist {
+            padding: 10px 5px;
+        }
+
+        .commonlist li {
+            background: url("../images/li1.png") 0px 7px no-repeat;
+            font-size: 14px;
+            padding-left: 16px;
+            height: 24px;
+            line-height: 24px;
+            overflow: hidden;
+        }
+
+        .commonlist span.num {
+            display: none;
+        }
+
+        .rank {
+            padding: 15px 5px 15px 10px;
+        }
+
+        .rank li {
+            border: medium none;
+            font-size: 14px;
+            height: 24px;
+            line-height: 24px;
+            overflow: hidden;
+        }
+
+        .rank span {
+            background: #848484;
+            color: #FFFFFF;
+            display: block;
+            float: left;
+            font-size: 12px;
+            height: 16px;
+            line-height: 16px;
+            margin-right: 10px;
+            margin-top: 5px;
+            text-align: center;
+            width: 16px;
+        }
+
+        .rank .top1 span,
+        .rank .top2 span,
+        .rank .top3 span {
+            background: #990000;
+        }
+
+        #myFocus {
+            width: 484px;
+            height: 340px;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+
+        #cateFocus {
+            width: 484px;
+            height: 290px;
+            overflow: hidden
+        }
+
+        .pic img {
+            width: 486px;
+            height: 320px;
+        }
+
+        #sectionElite #eliteNew {
+            width: 240px;
+        }
+
+        #sectionFuxing .box_l {
+            float: left;
+            width: 323px;
+            margin-right: 13px;
+        }
+
+        #sectionFuxing .box_c {
+            float: left;
+            width: 323px;
+            margin-right: 12px;
+        }
+
+        #sectionFuxing .box_r {
+            float: right;
+            width: 323px;
+        }
+
+        .classTitle {
+            background: #DAE5FF;
+            border-bottom: 1px solid #D6D6D6;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .classTitle h2 {
+            background: url("../images/class1.png") no-repeat scroll 5px 8px;
+            float: left;
+            font-size: 15px;
+            text-indent: 25px;
+        }
+
+        .classTitle h2 a {
+            color: #000
+        }
+
+        .classTitle1 {
+            border-bottom: 1px solid #D6D6D6;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .classTitle1 h2 {
+            background: url("../images/tbg3.png") no-repeat;
+            float: left;
+            font-size: 15px;
+            width: 132px;
+            height: 30px;
+            line-height: 28px;
+            text-indent: 18px;
+        }
+
+        .classTitle1 h2 a {
+            color: #fff
+        }
+
+        .classTitle2 {
+            background: url("../images/tbg.jpg") repeat scroll -2px;
+            height: 29px;
+            line-height: 29px;
+            border-bottom: 1px solid #D6D6D6;
+        }
+
+        .classTitle2 h2 {
+            float: left;
+            font-size: 15px;
+            line-height: 29px;
+            text-indent: 12px;
+        }
+
+        .classTitle2 h2 a {
+            color: #000
+        }
+
+        .classTitle3 {
+            background: url("../images/tbg5.jpg") repeat scroll -2px;
+            height: 29px;
+            line-height: 29px;
+            border-bottom: 1px solid #D6D6D6;
+        }
+
+        .classTitle3 h2 {
+            float: left;
+            font-size: 15px;
+            line-height: 29px;
+            text-indent: 10px;
+        }
+
+        .classTitle3 h2 a {
+            color: #000
+        }
+
+        .classTitle4 {
+            background: url("../images/tbg4.jpg") repeat-x;
+            height: 29px;
+            line-height: 29px;
+            border-bottom: 1px solid #D6D6D6;
+        }
+
+        .classTitle4 h2 {
+            float: left;
+            font-size: 15px;
+            line-height: 29px;
+            text-indent: 10px;
+        }
+
+        .classTitle4 h2 a {
+            color: #000
+        }
+
+        .classTitle5 {
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #D6D6D6;
+            width: 706px;
+            margin-left: 6px;
+        }
+
+        .classTitle5 h2 {
+            float: left;
+            font-size: 20px;
+            text-indent: 20px;
+            color: #0A57AB;
+        }
+
+        .classTitle5 .path {
+            line-height: 50px;
+            float: right;
+        }
+
+        dl.classImgArticle {
+            border-bottom: 1px dotted #CCCCCC;
+            padding: 6px 10px 10px;
+        }
+
+        dl.classImgArticle:after {
+            clear: both;
+            content: " ";
+            display: block;
+            font-size: 0;
+            height: 0;
+            visibility: hidden;
+        }
+
+        .classImgArticle dd h4 {
+            font-size: 14px;
+            height: 24px;
+            line-height: 24px;
+            font-weight: bold;
+            overflow: hidden;
+        }
+
+        .classImgArticle dd h4 a {
+            color: #0A57AB
+        }
+
+        #sectionFuxing .classImgArticle dd {
+            width: 160px
+        }
+
+        #classShow .classImgArticle dd {
+            width: 186px
+        }
+
+        #sectionCate .classMain .classImgArticle dd {
+            width: 186px
+        }
+
+        .classImgArticle dd {
+            height: 89px;
+            float: right;
+            width: 172px;
+            overflow: hidden;
+        }
+
+        .classImgArticle dt {
+            float: left;
+        }
+
+        .classImgArticle img {
+            height: 84px;
+            width: 135px;
+            margin-top: 4px;
+        }
+
+        .classImgArticle .summary {
+            line-height: 22px;
+            color: #777;
+            text-indent: 2em
+        }
+
+        #sectionClass {
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .mainLeft {
+            float: left;
+            width: 720px;
+        }
+
+        .mainRight {
+            float: right;
+            width: 264px;
+        }
+
+        .spclass {
+            margin: 10px;
+            width: 334px;
+        }
+
+        .spclass h3 {
+            background: #F1F1F1;
+            border-bottom: 2px solid #E3E3E3;
+            font-size: 15px;
+            height: 25px;
+            line-height: 26px;
+            text-indent: 20px;
+        }
+
+        .spclass h3 a {
+            color: #0A57AB
+        }
+
+        .spclass .classImgArticle .summary {
+            width: 168px;
+        }
+
+        #shiPing .left {
+            border-right: 2px dashed #D7D7D7;
+            padding-right: 14px;
+            margin-right: 0px
+        }
+
+        #classShow {
+            margin-top: 10px;
+        }
+
+        .classMain {
+            width: 351px;
+            margin-bottom: 10px;
+        }
+
+        .classMain .classImgArticle .summary {
+            width: 186px;
+        }
+
+        .rbox {
+            margin-bottom: 10px;
+        }
+
+        .indexalist {
+            padding: 10px
+        }
+
+        .indexalist li {
+            height: 120px;
+            margin-top: 10px;
+        }
+
+        .indexalist li img {
+            float: left;
+            width: 110px;
+            height: 110px;
+        }
+
+        .indexalist li .zz-info {
+            float: right;
+            width: 120px;
+        }
+
+        .indexalist h4 {
+            line-height: 30px;
+            font-size: 14px;
+        }
+
+        .indexalist .summary {
+            color: #333;
+            text-indent: 2em;
+        }
+
+        ul.author {
+            padding: 10px 0px 10px 18px;
+        }
+
+        .author li {
+            float: left;
+            width: 65px;
+            margin: 8px 5px;
+            padding: 5px 0px;
+            text-align: center;
+            background: #2F5C9E
+        }
+
+        .author li a {
+            color: #fff
+        }
+
+        .author li:hover {
+            background: #E44337
+        }
+
+        /* cate->fuxing*/
+        .path {
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 5px;
+            padding-left: 5px;
+            font-size: 14px;
+        }
+
+        .path a {
+            color: #000
+        }
+
+        .topelite {
+            border: 1px solid #99CDFF;
+            padding: 6px 8px;
+            background: #fff
+        }
+
+        #cateElite {
+            width: 490px;
+        }
+
+        .elitelist {
+            padding: 0px 10px;
+        }
+
+        .elitelist li {
+            border-bottom: 1px dashed #dedede;
+            padding-bottom: 8px;
+            margin: 6px auto
+        }
+
+        .elitelist h3 {
+            height: 24px;
+            line-height: 24px;
+            font-size: 16px;
+            overflow: hidden
+        }
+
+        .elitelist div {
+            color: #666;
+            line-height: 20px;
+            height: 40px;
+            overflow: hidden;
+            font-size: 12px;
+        }
+
+        .ad_tougao img {
+            width: 264px;
+            height: 75px;
+            margin-bottom: 10px;
+        }
+
+        .cateLeft {
+            width: 720px;
+            float: left;
+        }
+
+        .cateRight {
+            width: 264px;
+            float: right
+        }
+
+        .classLong {
+            width: 720px;
+        }
+
+        .lbox {
+            margin-bottom: 10px;
+        }
+
+        .two {
+            padding: 10px 10px 0px
+        }
+
+        .two dl {
+            width: 45%;
+            border-bottom: none
+        }
+
+        .commonlistT {
+            padding: 10px;
+        }
+
+        .commonlistT li {
+            background: url("../images/li2.jpg") 0px 9px no-repeat;
+            font-size: 14px;
+            padding-left: 12px;
+            height: 24px;
+            width: 324px;
+            line-height: 24px;
+            overflow: hidden;
+        }
+
+        .newstime {
+            float: right;
+            color: #999999;
+            font-size: 12px;
+        }
+
+        /* List */
+        #midBanner {
+            margin-bottom: 10px;
+        }
+
+        #midBanner img {
+            height: 200px;
+            width: 1000px;
+        }
+
+        .list {
+            background: url("../images/cbg.png") repeat-x #fff;
+        }
+
+        .listElite {
+            padding: 15px
+        }
+
+        .listElite .left {
+            width: 200px;
+            text-align: center
+        }
+
+        .listElite .left img {
+            width: 175px;
+            height: 120px;
+        }
+
+        .listElite .right {
+            width: 490px;
+            height: 120px;
+            overflow: hidden
+        }
+
+        .listElite .right h3 {
+            height: 26px;
+            line-height: 26px
+        }
+
+        .listElite .detail {
+            height: 26px;
+            line-height: 26px
+        }
+
+        .listElite .summary {
+            height: 60px;
+            overflow: hidden;
+            line-height: 20px;
+            color: #666;
+            text-indent: 2em;
+        }
+
+        .listElite .summary a {
+            color: #aa0000
+        }
+
+        .listElite .summary a:hover {
+            color: #ff0000
+        }
+
+        .listElite li {
+            margin-bottom: 20px
+        }
+
+        .list .commonlist {
+            padding: 10px 15px;
+        }
+
+        .hr-dash {
+            border-bottom: 1px dashed #d6d6d6;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* Article */
+        .article {
+            background: url("../images/cbg.png") repeat-x #fff;
+        }
+
+        .article .path {
+            font-size: 12px;
+        }
+
+        .article_toolbar {
+            position: relative;
+        }
+
+        .article_toolbar .jiathis_style {
+            position: absolute;
+            right: 10px;
+            top: -25px;
+        }
+
+        .article h1 {
+            text-align: center;
+            font-size: 22px;
+            height: 40px;
+            line-height: 40px;
+            margin: 10px 0px 0px
+        }
+
+        .article .property {
+            text-align: center;
+            height: 22px;
+            line-height: 22px;
+            margin: 5px auto;
+        }
+
+        #Acontent {
+            padding: 20px;
+            font-family: "宋体";
+            font-size: 17px;
+            line-height: 28px;
+        }
+
+        #Acontent h1 {
+            font-size: 20px;
+            margin: 1em auto;
+        }
+
+        #Acontent h2 {
+            font-size: 18px;
+            margin: 0.5em auto;
+        }
+
+        #Acontent h3 {
+            font-size: 16px;
+            margin: 0.5em auto;
+        }
+
+        #Acontent p {
+            white-space: pre-wrap;
+            word-break: break-all;
+            word-wrap: break-word;
+            padding: 8px 0;
+        }
+
+        #bottom_tool {
+            position: relative;
+            height: 70px;
+            border-bottom: 2px solid #444;
+        }
+
+        #bottom_tool .jiathis_style_32x32 {
+            position: absolute;
+            left: 0px;
+            bottom: 15px;
+        }
+
+        #bottom_tool #bprint {
+            background: url("../images/bprint.png") no-repeat;
+            color: #800000;
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            height: 40px;
+            line-height: 34px;
+            padding-left: 40px;
+            position: absolute;
+            right: 0;
+            top: 18px;
+        }
+
+        .related {
+            margin: 15px 0px;
+        }
+
+        .related_header {
+            color: #E44337;
+            font-family: "微软雅黑";
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: bold
+        }
+
+        ul.related_list {
+            height: auto;
+        }
+
+        ul.related_list li {
+            background: url("../images/li3.jpg") no-repeat scroll 16px 13px rgba(0, 0, 0, 0);
+            float: left;
+            height: 24px;
+            line-height: 24px;
+            overflow: hidden;
+            text-indent: 28px;
+            width: 50%;
+        }
+
+        .related ul li h2 {
+            font-size: 16px;
+            line-height: 32px;
+        }
+
+        .related ul li a {
+            color: #2B4D85;
+        }
+
+        #comments {
+            background: #FFFFFF;
+            border-top: 10px solid #E3E3E3;
+            padding: 20px 20px
+        }
+
+        #comments h2 {
+            font-size: 16px;
+            color: #E44337
+        }
+
+        #uyan_cmt_tit {
+            display: none
+        }
+
+        /* serarch */
+        #searchMain {
+            background: none repeat scroll 0 0 #FDFDFD;
+            padding: 20px;
+        }
+
+        #searchform #keyboard {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 1px solid #666666;
+            color: #666666;
+            text-align: left;
+            height: 24px;
+            margin-right: 2px;
+            padding-right: 44px;
+            width: 180px;
+            padding: 0px 5px;
+        }
+
+        #searchResult p {
+            font-family: "宋体";
+            font-size: 16px;
+            margin: 10px auto;
+            text-indent: 2em;
+        }
+
+        #searchResult {
+            padding-left: 10px;
+        }
+
+        #searchResult strong {
+            color: #ee0000
+        }
+
+        #searchResult li {
+            color: #800000;
+            font-size: 14px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        #searchResult a {
+            color: #333333;
+            font-family: "宋体";
+            font-size: 14px;
+            word-spacing: 1px;
+        }
+
+        /* pages */
+        .pages {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .pages li {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 1px solid #E5E5E5;
+            color: #283C6E;
+            display: inline-block;
+            height: 34px;
+            line-height: 34px;
+            margin: 0;
+            min-width: 30px;
+            text-align: center;
+            padding: 0px 5px;
+            margin: 0px 5px;
+        }
+
+        .pages li a {
+            display: block;
+            width: 100%;
+            height: 100%
+        }
+
+        .pages li.thispage {
+            background: #CCCCCC;
+            font-weight: 600;
+        }
+
+        .pages li.thispage a {
+            color: #fff
+        }
+
+        .pages li:hover {
+            background: #CCCCCC;
+            color: #fff
+        }
+
+        /* advance search*/
+        .title {
+            background: none repeat scroll 0 0 #C7C7C8;
+            border: 0 none;
+            color: #4E0002;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+            height: 30px;
+            width: 100%;
+        }
+
+        .title span {
+            display: inline-block;
+            float: left;
+            padding: 5px 0 0 10px;
+            text-align: left;
+        }
+
+        #advanceSearch {
+            background: none repeat scroll 0 0 #FFFFFF;
+            display: inline-block;
+            padding: 10px;
+            width: 980px;
+        }
+
+        #mainbody {
+            background: none repeat scroll 0 0 #EAEAEF;
+            border: 1px solid #B5B5B5;
+            display: inline-block;
+            width: 978px;
+        }
+
+        #main .title .left,
+        #main .title .right {
+            display: inline-block;
+            text-align: left;
+            width: 49%;
+        }
+
+        #main .title .left span {
+            display: inline-block;
+            padding: 5px 0 0 10px;
+        }
+
+        #main .title .right span {
+            display: inline-block;
+            padding: 5px 0 0 10px;
+        }
+
+        #main .context {
+            width: 958px;
+        }
+
+        .content #select2 {
+            height: 168px;
+        }
+
+        #main .context .left,
+        #main .context .right {
+            display: inline-block;
+            text-align: left;
+            width: 49%;
+        }
+
+        #main .context .left .content,
+        #main .context .right .content {
+            font-family: tahoma;
+            font-size: 12px;
+            margin: 10px;
+            width: 90%;
+        }
+
+        #main .context .left .content input {
+            vertical-align: middle;
+        }
+
+        #submit {
+            display: inline-block;
+            margin-top: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        #submit input {
+            vertical-align: middle;
+        }
+
+        /* author list*/
+        .authorlist {
+            padding: 10px 0 10px 27px;
+        }
+
+        .authorlist li {
+            float: left;
+            width: 150px;
+            height: 155px;
+            margin: 10px;
+        }
+
+        .authorlist img {
+            width: 130px;
+            height: 130px;
+        }
+
+        .authorlist p {
+            text-align: center;
+            line-height: 24px;
+            height: 24px
+        }
+
+        /* author alist*/
+        .authorLeft {
+            width: 640px;
+            float: left
+        }
+
+        .authorRight {
+            width: 345px;
+            float: right
+        }
+
+        .authorRight .website {
+            padding: 10px
+        }
+
+        .authorinfo {
+            padding: 15px;
+        }
+
+        .authorinfo img {
+            width: 120px;
+            height: 120px;
+            float: left;
+            padding: 0 10px 5px 0;
+        }
+
+        .adetail h4 {
+            font-size: 18px;
+        }
+
+        .adetail .aftitle {
+            color: #FF6600;
+            line-height: 22px;
+            margin: 8px 0px 3px
+        }
+
+        .adetail {
+            line-height: 20px;
+        }
+
+        .adetail .hitnum {
+            color: #FF6600;
+            float: right
+        }
+
+        .aalist h4 {
+            font-size: 1.2em;
+            font-weight: bold;
+            line-height: 1.25;
+        }
+
+
+        .elite_0,
+        .elite_1,
+        .elite_2,
+        .elite_3 {
+            font-weight: normal
+        }
+
+        .elite_4,
+        .elite_5,
+        .elite_6 {
+            font-weight: bold;
+        }
+
+        .mF_expo2010 .pic li {
+            position: absolute;
+        }
+
+        .mF_expo2010 .txt_bg {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            height: 36px;
+            width: 100%;
+            background: #000;
+            filter: alpha(opacity=40);
+            opacity: 0.4;
+        }
+
+        .mF_expo2010 .txt li {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            height: 36px;
+            line-height: 36px;
+        }
+
+        .mF_expo2010 .txt li a {
+            display: block;
+            color: #fff;
+            padding: 2px 0 0 16px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .mF_expo2010 .num {
+            position: absolute;
+            z-index: 3;
+            bottom: 8px;
+            right: 8px;
+        }
+
+        .mF_expo2010 .num li {
+            float: left;
+            position: relative;
+            width: 22px;
+            height: 18px;
+            line-height: 18px;
+            overflow: hidden;
+            text-align: center;
+            margin-right: 1px;
+            cursor: pointer;
+        }
+
+        .mF_expo2010 .num li a,
+        .mF_expo2010 .num li b {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-decoration: none;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -o-transition: all 0.4s;
+        }
+
+        .mF_expo2010 .num li b {
+            z-index: 1;
+            background: #fff;
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+        }
+
+        .mF_expo2010 .num li.hover a,
+        .mF_expo2010 .num li.current a {
+            background: #F60;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <div id="midHeader" class="wid">
+            <div id="logo" class="left">
+                <a href="https://www.mzfxw.com/"><img src="https://www.mzfxw.com/skin/default/images/logo.png" /></a>
+            </div>
+            <div id="banner" class="left">
+                <img src="https://www.mzfxw.com/skin/default/images/banner.png" />
+            </div>
+            <div id="topFun" class="right">
+                <div id='app' style='float:left;margin-right:10px'><a href="https://www.mzfxw.com/m">手机版</div>
+                <a href="index.html">返回首页</a>
+                <a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a><a
+                    href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>
+            </div>
+
+        </div>
+    </div>
+    <div id="topNav" class="wid">
+        <ul class="clearfix">
+            <li id="topnav_0"><a href="/">首页</a></li>
+            <li id="topnav_1"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=2">三大复兴</a></li>
+            <li id="topnav_2"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=3">时事评析</a></li>
+            <li id="topnav_3"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=4">媒体观点</a></li>
+            <li id="topnav_4"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=5">青春时代</a></li>
+            <li id="topnav_5"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=6">历史经典</a></li>
+            <li id="topnav_6"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=8">网友杂谈</a></li>
+            <li id="topnav_7"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=7">海外华人</a></li>
+            <li id="topnav_8"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=25">红色校园</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div id="main" class="wid">
+        <div id="sectionToutiao" class="section clearfix">
+            <h1 class="headline1"><a href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170079"
+                    target="_blank">张宏良：中国革命青年的伟大先驱毛岸英烈士永垂不朽！</a></h1>
+            <div class="headline2">
+                [<a href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170071"
+                    target="_blank">“中国超算”的创新之路</a>]
+                [<a href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170041"
+                    target="_blank">为什么我们今天的干部总和老百姓起冲突？</a>]
+                [<a href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=169924"
+                    target="_blank">刘振起：这首歌让我泪目</a>]
+            </div>
+        </div>
+        <div id="sectionElite" class="section clearfix">
+            <div id="fuxing" class="left border">
+                <div class="classTitle clearfix">
+                    <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=23" target="_blank">复兴之路</a></h2>
+                    <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=23"
+                            target="_blank">>></a></span>
+                </div>
+                <ul class="commonlist">
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=168460"
+                            target="_blank">毛主席这5句话已融入中华民族的血液，不可不知！</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=167377"
+                            target="_blank">出于农民归于农民的浩然</a></li>
+                    <li><a class="elite_5" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=136802"
+                            target="_blank">毛泽东：在延安文艺座谈会上的讲话</a></li>
+                    <li><a class="elite_5" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=155053"
+                            target="_blank">迎接21世纪伟大的复兴运动——复兴网发刊词</a></li>
+                    <li><a class="elite_5" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=154671"
+                            target="_blank">张宏良：请为捍卫9段线国界尽一份力量</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=153523"
+                            target="_blank">张宏良：中国共产党的百年答卷</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=153123"
+                            target="_blank">张宏良：大众民主的三原则 （配乐朗诵版）</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=152891"
+                            target="_blank">为人民服务</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=152057"
+                            target="_blank">张宏良：为人民服务是人类政治的最终归宿（2019年）</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=151587"
+                            target="_blank">张宏良：高举毛泽东思想伟大红旗，实现社会主义的伟大复兴</a></li>
+                    <li><a class="elite_5" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=151094"
+                            target="_blank">关于学懂弄通马列主义毛泽东思想的一个衡量标准问题</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=23&id=150272"
+                            target="_blank">毛主席与党的第一次全国代表大会</a></li>
+                </ul>
+            </div>
+            <div id="myFocus" class="left scroll">
+                <div class="pic">
+                    <ul>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170071"
+                                target="_blank"><img
+                                    src="https://www.mzfxw.com/d/file/Article/fuxing/zhonghua/2022-11-25/293a209148b12dbb488f15a3a1e3d743.jpg"
+                                    thumb="https://www.mzfxw.com/d/file/Article/fuxing/zhonghua/2022-11-25/293a209148b12dbb488f15a3a1e3d743.jpg"
+                                    alt="“中国超算”的创新之路" /></a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=169924"
+                                target="_blank"><img
+                                    src="https://www.mzfxw.com/d/file/Article/wenyi/2022-11-19/7b0c5d5c918437dde0ad9dc0f3a69e78.jpg"
+                                    thumb="https://www.mzfxw.com/d/file/Article/wenyi/2022-11-19/7b0c5d5c918437dde0ad9dc0f3a69e78.jpg"
+                                    alt="刘振起：这首歌让我泪目" /></a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170147"
+                                target="_blank"><img
+                                    src="https://www.mzfxw.com/d/file/Article/shiping/guoji/2022-11-28/f2335f9f6997bb19b901f447f1389d90.jpg"
+                                    thumb="https://www.mzfxw.com/d/file/Article/shiping/guoji/2022-11-28/f2335f9f6997bb19b901f447f1389d90.jpg"
+                                    alt="朝鲜：积极利用自然能源" /></a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170133"
+                                target="_blank"><img
+                                    src="https://www.mzfxw.com/d/file/Article/lszm/2022-11-28/967285b67226cb27f530f0d4cc1e4a10.jpg"
+                                    thumb="https://www.mzfxw.com/d/file/Article/lszm/2022-11-28/967285b67226cb27f530f0d4cc1e4a10.jpg"
+                                    alt="1949年12月  解放军组织民众在重庆市白公馆监狱地区为被国民党杀害的革命烈士收尸" /></a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170121"
+                                target="_blank"><img
+                                    src="https://www.mzfxw.com/d/file/Article/shiping/guoji/2022-11-27/55ab6539e7953cc6164a74527ba6d8ba.jpg"
+                                    thumb="https://www.mzfxw.com/d/file/Article/shiping/guoji/2022-11-27/55ab6539e7953cc6164a74527ba6d8ba.jpg"
+                                    alt="俄罗斯国防部：美国将动用民用机构消除对五角大楼生物威胁的指控" /></a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170130"
+                                target="_blank"><img
+                                    src="https://www.mzfxw.com/d/file/Article/fuxing/zhonghua/2022-11-27/67560dcab57a2c9678c3a4276880b517.jpg"
+                                    thumb="https://www.mzfxw.com/d/file/Article/fuxing/zhonghua/2022-11-27/67560dcab57a2c9678c3a4276880b517.jpg"
+                                    alt="孔庆东：很多时候你真猜不到，到底他在想什么" /></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="eliteNew" class="right border">
+                <div class="classTitle cleaffix">
+                    <h2><a href="#">最新推荐</a></h2> <span class="more"><a href="#">>></a></span>
+                </div>
+                <ul class="commonlist">
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170071"
+                            target="_blank">“中国超算”的创新之路</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170041"
+                            target="_blank">为什么我们今天的干部总和老百姓起冲突？</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=169924"
+                            target="_blank">刘振起：这首歌让我泪目</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170152"
+                            target="_blank">一字千军谈谁是我们的敌人</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=170146"
+                            target="_blank">七绝-楼上写诗</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170135"
+                            target="_blank">林治波：提几条建议</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=170151"
+                            target="_blank">中方可考虑以“非对等”反制措施来严惩以美国为首的英语四国反华劣行</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=170149"
+                            target="_blank">【新时代新征程新伟业】红旗渠畔红家乐</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=170148"
+                            target="_blank">学习《论持久战》的科学思想方法</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170150"
+                            target="_blank">朝鲜各部门各单位采取防疫措施努力防范各种呼吸道疾病发生传播</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170147"
+                            target="_blank">朝鲜：积极利用自然能源</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170133"
+                            target="_blank">1949年12月 解放军组织民众在重庆市白公馆监狱地区为被国民党杀害的革命烈士收尸</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="sectionFuxing" class="section clearfix">
+            <div class="box_l border">
+                <div class="classTitle1">
+                    <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=11" target="_blank">社会主义复兴</a></h2>
+                    <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=11"
+                            target="_blank">>></a></span>
+                </div>
+                <dl class="classImgArticle">
+                    <dt><a><img alt="特辑｜朝鲜的儿童"
+                                src="https://www.mzfxw.com/d/file/Article/fuxing/Socialism/2022-11-26/b059269ec0cff928e1805ba8eccbebaa.jpg"></a>
+                    </dt>
+                    <dd>
+                        <h4><a target="_blank" title="特辑｜朝鲜的儿童"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=170084">特辑｜朝鲜的儿童</a>
+                        </h4>
+                        <div class="summary">朝鲜民主主义人民共和国国务委员长金正恩同志具有“孩子们的欢笑声响亮，全国才能阳光灿烂”这样一种崇高的后代观，把最好的东西都送给孩子们</div>
+                    </dd>
+                </dl>
+                <ul class="commonlist">
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=170149"
+                            target="_blank">【新时代新征程新伟业】红旗渠畔红家乐</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=170148"
+                            target="_blank">学习《论持久战》的科学思想方法</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=170084"
+                            target="_blank">特辑｜朝鲜的儿童</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=170058"
+                            target="_blank">不能忘记：计划经济国营企业如何被搞垮颠覆？</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=170032"
+                            target="_blank">【视频】连浦温室农场村庄迎来乔迁之喜</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=170015"
+                            target="_blank">九十年后重读《湖南农民运动考察报告》百感交集</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=169978"
+                            target="_blank">不要试图把格瓦拉同志拉进自己的修正主义阵营</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=169968"
+                            target="_blank">纪念彭士禄，缅怀毛主席：核潜艇一万年也要搞出来</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=169906"
+                            target="_blank">几则随想，公有制与私有制的区别</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=169922"
+                            target="_blank">社会主义公有制才是符合大多人利益的制度</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=169911"
+                            target="_blank">在朝鲜一到农忙季节，所有人都自愿参加支农</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=169885"
+                            target="_blank">第十 铁饭碗的弊病 改革的路径与计划指标流通论的提出</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=169880"
+                            target="_blank">新幸福朝鲜：社会主义我们的家 是世上最好</a></li>
+                </ul>
+            </div>
+            <div class="box_c border">
+                <div class="classTitle1 clearfix">
+                    <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=12" target="_blank">中华民族复兴</a></h2>
+                    <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=12"
+                            target="_blank">>></a></span>
+                </div>
+                <dl class="classImgArticle">
+                    <dt><a><img alt="“中国超算”的创新之路"
+                                src="https://www.mzfxw.com/d/file/Article/fuxing/zhonghua/2022-11-25/293a209148b12dbb488f15a3a1e3d743.jpg"></a>
+                    </dt>
+                    <dd>
+                        <h4><a target="_blank" title="“中国超算”的创新之路"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170071">“中国超算”的创新之路</a>
+                        </h4>
+                        <div class="summary">&mdash;&mdash;对话国防科技大学计算机学院院长、博士生导师卢凯
+
+                            卢凯(右)与团队成员在天河机房检查设备运行情况。高莉华摄
+
+                            　　开栏的话　　科技创新是引领发展的第一</div>
+                    </dd>
+                </dl>
+                <ul class="commonlist">
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170071"
+                            target="_blank">“中国超算”的创新之路</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170152"
+                            target="_blank">一字千军谈谁是我们的敌人</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170135"
+                            target="_blank">林治波：提几条建议</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170130"
+                            target="_blank">孔庆东：很多时候你真猜不到，到底他在想什么</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170136"
+                            target="_blank">戈尔巴乔夫首次见赫鲁晓夫在何时何地？有何印象？有何影响？</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170112"
+                            target="_blank">信仰的力量：一个共产党员医生的故事洗涤灵魂</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170099"
+                            target="_blank">陈先义：“九评”——学习党史绕不过去的重大历史事件</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170096"
+                            target="_blank">治国理政制高点与民族复兴（一）</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170080"
+                            target="_blank">张宏良：不要难为钟南山</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170070"
+                            target="_blank">盘点国家级超级计算中心</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170044"
+                            target="_blank">我们有信仰吗？</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170038"
+                            target="_blank">乡镇公交</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170033"
+                            target="_blank">我们不理睬它：斯大林为何敢不执行托洛茨基的电报命令？</a></li>
+                </ul>
+            </div>
+            <div class="box_r border">
+                <div class="classTitle1">
+                    <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=13" target="_blank">东方文化复兴</a></h2>
+                    <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=13"
+                            target="_blank">>></a></span>
+                </div>
+                <dl class="classImgArticle">
+                    <dt><a><img alt="开封州桥所见证的历史"
+                                src="https://www.mzfxw.com/d/file/Article/fuxing/wenming/2022-11-26/eac34c7fd4e249823de53e39d08944ab.jpg"></a>
+                    </dt>
+                    <dd>
+                        <h4><a target="_blank" title="开封州桥所见证的历史"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170091">开封州桥所见证的历史</a>
+                        </h4>
+                        <div class="summary">演讲人：刘春迎 演讲地点：河南大学黄河文明与可持续发展研究中心 演讲时间：2022年11月 刘春迎
+                            河南大学黄河文明与可持续发展研究中心二级教授、专职研究员、博士生导师。</div>
+                    </dd>
+                </dl>
+                <ul class="commonlist">
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170113"
+                            target="_blank">中医果真是慢郎中吗？</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170104"
+                            target="_blank">毛岸英：共产党有的是另一种“人情”</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170091"
+                            target="_blank">开封州桥所见证的历史</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170087"
+                            target="_blank">【大美中国】诗画皖南</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170085"
+                            target="_blank">追忆在毛泽东思想文艺宣传队的日子｜亲历</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170079"
+                            target="_blank">张宏良：中国革命青年的伟大先驱毛岸英烈士永垂不朽！</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170072"
+                            target="_blank">【大美中国】红叶映峡江</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170009"
+                            target="_blank">【大美中国】魅力椒江</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170008"
+                            target="_blank">毛主席的故事讲不完说不尽，好像还越讲越多，这是为何？</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170006"
+                            target="_blank">孔庆东：恋爱给谁看啊？——2022年7月下旬的微博问答</a></li>
+                    <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=169999"
+                            target="_blank">这些美术作品生动地描绘了朝鲜人民充满幸福和浪漫的日常生活</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=169977"
+                            target="_blank">屠呦呦在古籍中找到研究思路</a></li>
+                    <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=169963"
+                            target="_blank">中医药是中国人健康的最后屏障</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="sectionClass" class="section clearfix">
+            <div class="mainLeft">
+                <div id="shiPing" class="border clearfix">
+                    <div class="classTitle2">
+                        <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=3" target="_blank">时事评析</a></h2>
+                        <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=3"
+                                target="_blank">>></a></span>
+                    </div>
+                    <div class="spclass left">
+                        <h3><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=14" target="_blank">政策动向</a></h3>
+                        <dl class="classImgArticle">
+                            <dt><a><img alt="国防部：台独是绝路统一是正途"
+                                        src="https://www.mzfxw.com/d/file/Article/shiping/zhengce/2022-10-29/ac98dfa77d042414ef3e4bb854a4513a.jpg"></a>
+                            </dt>
+                            <dd>
+                                <h4><a target="_blank" title="国防部：台独是绝路统一是正途"
+                                        href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=169362">国防部：台独是绝路统一是正途</a>
+                                </h4>
+                                <div class="summary">“台独”是绝路，统一是正途。中国人民解放军时刻保持高度戒备，以实际行动坚决履行捍卫国家主权、统一和领土完整的神圣使命。</div>
+                            </dd>
+
+                        </dl>
+                        <ul class="commonlist">
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=169362"
+                                    target="_blank">国防部：台独是绝路统一是正途</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=169339"
+                                    target="_blank">外交部正告：美方核讹诈吓不倒中国</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=169306"
+                                    target="_blank">国防部：解决台湾问题是中国人自己的事，要由中国人来决定</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=169217"
+                                    target="_blank">中纪委：防止领导干部成为利益集团和权势团体代言人</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=168729"
+                                    target="_blank">贫穷不是社会主义是个陷阱——对司马同志的一个小补充</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=167597"
+                                    target="_blank">国防部：坚决反对第三方介入中印边界问题</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=167559"
+                                    target="_blank">财政部科教和文化司：支持办好人民满意的义务教育</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=167246"
+                                    target="_blank">公安部：零容忍查处，彻底摧毁网络交友类性侵犯罪网</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=166783"
+                                    target="_blank">国防部：军队的正面形象不能成为个别商家的赚钱工具</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=166054"
+                                    target="_blank">公安部：对黑恶势力有一个打一个，决不姑息手软</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=165875"
+                                    target="_blank">中共中央印发《中国共产党问责条例》</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=14&id=165733"
+                                    target="_blank">国家中医药管理局：到2025年全部社区服务中心设置中医馆</a></li>
+                        </ul>
+                    </div>
+                    <div class="spclass right">
+                        <h3><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=15" target="_blank">热点聚焦</a></h3>
+                        <dl class="classImgArticle">
+                            <dt><a><img alt="偶感：误国害民的防疫误区"
+                                        src="https://www.mzfxw.com/d/file/Article/shiping/reidian/2022-11-26/ba8413254024606778018b103239d569.jpg"></a>
+                            </dt>
+                            <dd>
+                                <h4><a target="_blank" title="偶感：误国害民的防疫误区"
+                                        href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170102">偶感：误国害民的防疫误区</a>
+                                </h4>
+                                <div class="summary">
+                                    西地西一味闭目塞听，拒不承认中医药的伟大作用，而只是全力鼓吹核酸迷信，疫苗迷信及外来洋药迷信。不知道西地西公司的老板们这样做究竟是为了谁的利益？是真正为了维护国民健康，还是为了别的什么？
+                                </div>
+                            </dd>
+
+                        </dl>
+                        <ul class="commonlist">
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170127"
+                                    target="_blank">“铁公鸡”？该给的钱一分都不能少，多一分那是添光彩</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170111"
+                                    target="_blank">别把拜登的话太当回事</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170102"
+                                    target="_blank">偶感：误国害民的防疫误区</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170078"
+                                    target="_blank">刘伯行：重磅！梁衡污蔑贬损毛主席，性质已变，必须彻底批判</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170062"
+                                    target="_blank">国防部：台湾是中国的（附2022年11月例行记者会文字实录）</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170057"
+                                    target="_blank">偶语：警惕白色暴力</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170055"
+                                    target="_blank">关键看最终怎么处理？</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170017"
+                                    target="_blank">孔庆东：到底是什么原因进退两难</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170023"
+                                    target="_blank">重大流行病毒检测权应收归国有</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170025"
+                                    target="_blank">俄乌拉尔化学公司称向巴西出口化肥时已用人民币结算，望将来能用卢布结算</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170022"
+                                    target="_blank">黄兴国：底层人民的苦，不能视而不见！</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=169983"
+                                    target="_blank">美国防部长最新表态称“美国的优先挑战是日益自信的中国”</a></li>
+                        </ul>
+                    </div>
+                    <div class="spclass left">
+                        <h3><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=16" target="_blank">派系争鸣</a></h3>
+                        <dl class="classImgArticle">
+                            <dt><a><img alt="非常有必要下调农村医保缴费，或者老人和小孩不用缴费了也行"
+                                        src="https://www.mzfxw.com/d/file/Article/shiping/zhengming/2022-11-21/94aa1bf5c3213208439b33320fb1c8c3.jpg"></a>
+                            </dt>
+                            <dd>
+                                <h4><a target="_blank" title="非常有必要下调农村医保缴费，或者老人和小孩不用缴费了也行"
+                                        href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169956">非常有必要下调农村医保缴费，或者老人和小孩不用缴费了也行</a>
+                                </h4>
+                                <div class="summary">
+                                    一年交60元的时候，干一天活就可以挣回来，大家会觉得这是福利。如今一年要交2100元，这相当于家庭一个月的生活开支了，自然很多人是心疼这笔钱的，这就成了负担。
+                                </div>
+                            </dd>
+
+                        </dl>
+                        <ul class="commonlist">
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169956"
+                                    target="_blank">非常有必要下调农村医保缴费，或者老人和小孩不用缴费了也行</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169934"
+                                    target="_blank">一字千军古今中外论第一</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169878"
+                                    target="_blank">讨论“外部联系决定论、内部联系反应论”</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169873"
+                                    target="_blank">子午：有感于某地“号召退役军人积极报名富士康招工”</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169794"
+                                    target="_blank">一字千军论粑粑</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169731"
+                                    target="_blank">一字千军论人的牛性</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169711"
+                                    target="_blank">一字千军论人与雪</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169673"
+                                    target="_blank">一字千军论人的蛇性</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169626"
+                                    target="_blank">社会主义标准</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169569"
+                                    target="_blank">一字千军论危机</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169529"
+                                    target="_blank">申鹏：停发员工工资，老板套现10亿</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=16&id=169343"
+                                    target="_blank">子午|质问抖音：在直播间读毛主席诗词，怎么啦？</a></li>
+                        </ul>
+                    </div>
+                    <div class="spclass right">
+                        <h3><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=17" target="_blank">世界风云</a></h3>
+                        <dl class="classImgArticle">
+                            <dt><a><img alt="朝鲜：积极利用自然能源"
+                                        src="https://www.mzfxw.com/d/file/Article/shiping/guoji/2022-11-28/f2335f9f6997bb19b901f447f1389d90.jpg"></a>
+                            </dt>
+                            <dd>
+                                <h4><a target="_blank" title="朝鲜：积极利用自然能源"
+                                        href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170147">朝鲜：积极利用自然能源</a>
+                                </h4>
+                                <div class="summary">　　朝中社平壤11月27日电　平壤化妆品厂积极利用自然能源助推产品生产。(完)　　www.kcna.kp (主体111.11.27.)
+                                </div>
+                            </dd>
+
+                        </dl>
+                        <ul class="commonlist">
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170150"
+                                    target="_blank">朝鲜各部门各单位采取防疫措施努力防范各种呼吸道疾病发生传播</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170147"
+                                    target="_blank">朝鲜：积极利用自然能源</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170121"
+                                    target="_blank">俄罗斯国防部：美国将动用民用机构消除对五角大楼生物威胁的指控</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170110"
+                                    target="_blank">英国共产党呼吁：无产者，联合起来！</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170114"
+                                    target="_blank">《劳动新闻》：要进一步加大反帝反美教育、阶级教育力度</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170109"
+                                    target="_blank">朝鲜最高人民会议常任委员会授予第321号发射架车英雄称号</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170106"
+                                    target="_blank">朝鲜：金野郡龙源等农场的劳动者分配到了新房</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170105"
+                                    target="_blank">俄“索雷斯”公司在此前的福特工厂投产两款新车型</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170094"
+                                    target="_blank">北约“炮灰”培训中心</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170082"
+                                    target="_blank">德国新勃兰登堡民众抗议政府能源政策与对俄制裁</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170069"
+                                    target="_blank">朝鲜：各市郡蓬勃开展群众运动</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=170065"
+                                    target="_blank">《劳动新闻》：全体干部要做一个锐意进取的设计师、大胆的指挥者和顽强的实践家</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="classShow" class="clearfix">
+                    <div class="classMain left border">
+                        <div class="classTitle3">
+                            <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=6" target="_blank">历史经典</a>
+                            </h2> <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=6"
+                                    target="_blank">>></a></span>
+                        </div>
+                        <dl class="classImgArticle">
+                            <dt><a><img alt="纪念乔冠华代表新中国第一次在联合国大会上亮相51周年"
+                                        src="https://www.mzfxw.com/d/file/Article/lszm/2022-11-15/10efde8c40fb757a585ae58154c77b23.jpg"></a>
+                            </dt>
+                            <dd>
+                                <h4><a target="_blank" title="纪念乔冠华代表新中国第一次在联合国大会上亮相51周年"
+                                        href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169828">纪念乔冠华代表新中国第一次在联合国大会上亮相51周年</a>
+                                </h4>
+                                <div class="summary">
+                                    1971年11月15日上午10时32分，中华人民共和国代表团昂首步入了联合国会议大厅。整个大厅立即爆发出经久不衰的掌声，代表们争相上台发言，祝贺中华人民共和国加入联合国。团长乔冠华在一片欢迎声中，代表中华人民共和国进行发言。51年后的今天，重温这段历史影像，感恩毛主席等老一辈无产阶级革命家的艰辛拼搏和伟大贡献！
+                                </div>
+                            </dd>
+
+                        </dl>
+                        <ul class="commonlist">
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169871"
+                                    target="_blank">毛主席创造的“食盐货币”镜鉴今朝</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169828"
+                                    target="_blank">纪念乔冠华代表新中国第一次在联合国大会上亮相51周年</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169832"
+                                    target="_blank">为解放西藏作出突出贡献的中将张国华</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169842"
+                                    target="_blank">1965年纪录片《送瘟神》</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169758"
+                                    target="_blank">王克勤运动始末</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169718"
+                                    target="_blank">孔庆东：抚今追昔，看看当年的成就</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=146716"
+                                    target="_blank">毛泽东语录：《沿着十月社会主义革命开辟的道路前进》</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169568"
+                                    target="_blank">十月之花永不败</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169593"
+                                    target="_blank">红军长征中的新闻宣传及其宝贵经验</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169567"
+                                    target="_blank">细微深处学精神</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169439"
+                                    target="_blank">1949 年10 月2 日，上海市人民政府举行升旗典礼</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=169293"
+                                    target="_blank">毛泽东三进新泉：新泉整训为古田会议打基础</a></li>
+                        </ul>
+                    </div>
+                    <div class="classMain right border">
+                        <div class="classTitle3">
+                            <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=18" target="_blank">历史正名</a>
+                            </h2> <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=18"
+                                    target="_blank">>></a></span>
+                        </div>
+                        <dl class="classImgArticle">
+                            <dt><a><img alt="1949年12月  解放军组织民众在重庆市白公馆监狱地区为被国民党杀害的革命烈士收尸"
+                                        src="https://www.mzfxw.com/d/file/Article/lszm/2022-11-28/967285b67226cb27f530f0d4cc1e4a10.jpg"></a>
+                            </dt>
+                            <dd>
+                                <h4><a target="_blank" title="1949年12月  解放军组织民众在重庆市白公馆监狱地区为被国民党杀害的革命烈士收尸"
+                                        href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170133">1949年12月
+                                        解放军组织民众在重庆市白公馆监狱地区为被国民党杀害的革命烈士收尸</a></h4>
+                                <div class="summary">1949年国民党在大陆全面溃败，4月南京解放，随着解放军的挺进，国民党在9月开始分批屠杀关押在监狱中的革命进步人士。</div>
+                            </dd>
+
+                        </dl>
+                        <ul class="commonlist">
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170133"
+                                    target="_blank">1949年12月 解放军组织民众在重庆市白公馆监狱地区为被国民党杀害的革命烈士收尸</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170125"
+                                    target="_blank">72年前的今天长津湖战役打响</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170108"
+                                    target="_blank">毛岸英逝世72周年：人民英雄毛岸英，永垂不朽！</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170103"
+                                    target="_blank">时间线梳理</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170098"
+                                    target="_blank">1975年11月26日，我国首颗返回式卫星发射升空</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170083"
+                                    target="_blank">朱继东：缅怀毛岸英同志牺牲72周年</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170059"
+                                    target="_blank">1965年 学生在空闲时到农村义务帮农民干农活 ​​​</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=170000"
+                                    target="_blank">教员论知识分子的唯一出路</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=169961"
+                                    target="_blank">申鹏：从南京“1865”，看中国工业化之路</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=169953"
+                                    target="_blank">21岁志愿军首次参战就歼敌280多名</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=169905"
+                                    target="_blank">沈志华又冒出来了</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=18&id=169886"
+                                    target="_blank">毛主席提出四个现代化</a></li>
+                        </ul>
+                    </div>
+                    <div class="classMain left border">
+                        <div class="classTitle3">
+                            <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=4" target="_blank">舆论观察</a>
+                            </h2> <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=4"
+                                    target="_blank">>></a></span>
+                        </div>
+                        <ul class="commonlist">
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=169441"
+                                    target="_blank">人民日报：今天，缅怀钱老！</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=169406"
+                                    target="_blank">求是网：红旗渠精神永在</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=169200"
+                                    target="_blank">解放军报：忠诚维护核心 坚决听党指挥</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=169172"
+                                    target="_blank">光明日报：用新的伟大奋斗创造新的伟业</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=169171"
+                                    target="_blank">解放军报：谱写新时代中国特色社会主义更加绚丽的华章</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=169170"
+                                    target="_blank">人民日报：团结奋斗，谱写新时代中国特色社会主义更加绚丽的华章</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=167198"
+                                    target="_blank">人民日报：祖国完全统一进程不可阻挡</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=167080"
+                                    target="_blank">短评：公道自在人心</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=166940"
+                                    target="_blank">解放军报：坚决捍卫国家主权和领土完整</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=166882"
+                                    target="_blank">人民日报：为实现中华民族伟大复兴提供更为坚强的战略支撑</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=166881"
+                                    target="_blank">解放军报：在党的旗帜下奋力谱写强军事业新篇章</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=4&id=166784"
+                                    target="_blank">钟声：枪支暴力折射美国治理失灵</a></li>
+                        </ul>
+                    </div>
+                    <div class="classMain right border">
+                        <div class="classTitle3">
+                            <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=7" target="_blank">海外华人</a>
+                            </h2> <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=7"
+                                    target="_blank">>></a></span>
+                        </div>
+                        <ul class="commonlist">
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=169976"
+                                    target="_blank">孟加拉国诈骗案频发 中使馆提醒公民通过合法途径换汇</a></li>
+                            <li><a class="elite_0"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=169834"
+                                    target="_blank">马来西亚频现以大选名义实施的电信诈骗</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=169641"
+                                    target="_blank">在美中国留学生遭遇巨额诈骗 警方列举防骗注意事项</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=169328"
+                                    target="_blank">纽约公布开放街道经济效益报告 华埠销售额欠佳</a></li>
+                            <li><a class="elite_0"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=169296"
+                                    target="_blank">美国华人老妇到银行取钱被抢劫 警方支招防范</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=169295"
+                                    target="_blank">乌克兰危机持续 海外同胞在未知中寻求新开始</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=169082"
+                                    target="_blank">华裔众议员赵美心批美国最高法院伤害亚裔 吁进行改革</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=168877"
+                                    target="_blank">美国南加华人女子银行卡一个月被盗刷逾万美元</a></li>
+                            <li><a class="elite_0"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=168832"
+                                    target="_blank">驻乌克兰大使馆提醒在乌中国公民完成10月登记备案</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=168561"
+                                    target="_blank">美华人司机被枪杀案：爱心捐款转交家属</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=168437"
+                                    target="_blank">调查显示：美国加州亚太裔8%因疫情曾遭遇仇恨事件</a></li>
+                            <li><a class="elite_0"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=7&id=168133"
+                                    target="_blank">意大利发生多起通过GPS跟踪抢劫华商案件 其中5名嫌犯落网</a></li>
+                        </ul>
+                    </div>
+                    <div class="classMain left border">
+                        <div class="classTitle3">
+                            <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=5" target="_blank">青春时代</a>
+                            </h2> <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=5"
+                                    target="_blank">>></a></span>
+                        </div>
+                        <dl class="classImgArticle">
+                            <dt><a><img alt="云南女孩用7天为留守老人建了个水电站"
+                                        src="https://www.mzfxw.com/d/file/Article/fuxing/wenming/2022-11-17/d0340957b873ad1e040900d8aa6827bf.jpg"></a>
+                            </dt>
+                            <dd>
+                                <h4><a target="_blank" title="云南女孩用7天为留守老人建了个水电站"
+                                        href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169888">云南女孩用7天为留守老人建了个水电站</a>
+                                </h4>
+                                <div class="summary">
+                                    近日，云南女孩林果儿历时7天，为家乡山区留守老人建造了一座简易的小型水电站，解决了老人的实际困难。据了解，林果儿是云南省昭通市盐津县人，本科是水利水电工程专业毕业，近年来一直运用专业知识为老乡们翻修废旧机器。网友：这才是真正的用爱发电。
+                                </div>
+                            </dd>
+
+                        </dl>
+                        <ul class="commonlist">
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=170003"
+                                    target="_blank">让青年突击队的旗帜永远飘扬</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169998"
+                                    target="_blank">女子称休息日不去公司开会被辞退</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169888"
+                                    target="_blank">云南女孩用7天为留守老人建了个水电站</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169792"
+                                    target="_blank">95后宝妈带1岁宝宝上班：争取早日买房安家</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169691"
+                                    target="_blank">67年，这群青年把荒地变良田！</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169639"
+                                    target="_blank">一天送了65单外卖的“密接者”只吃一顿饭 快要当爹想多挣点</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169634"
+                                    target="_blank">女子奔丧请假4天被扣3000元工资</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169585"
+                                    target="_blank">一生不做俗人之举！当代女性楷模——纪念杨开慧诞辰121周年</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169499"
+                                    target="_blank">你的牵挂在乎，是你一生最可靠的真心</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169490"
+                                    target="_blank">我们有人在富士康，有人在兰州……</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169281"
+                                    target="_blank">大学生需警惕线上付费实习陷阱</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=5&id=169039"
+                                    target="_blank">人生因坚韧而出彩</a></li>
+                        </ul>
+                    </div>
+                    <div class="classMain right border">
+                        <div class="classTitle3">
+                            <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=19" target="_blank">文艺纵横</a>
+                            </h2> <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=19"
+                                    target="_blank">>></a></span>
+                        </div>
+                        <dl class="classImgArticle">
+                            <dt><a><img alt="刘振起：这首歌让我泪目"
+                                        src="https://www.mzfxw.com/d/file/Article/wenyi/2022-11-19/7b0c5d5c918437dde0ad9dc0f3a69e78.jpg"></a>
+                            </dt>
+                            <dd>
+                                <h4><a target="_blank" title="刘振起：这首歌让我泪目"
+                                        href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=169924">刘振起：这首歌让我泪目</a>
+                                </h4>
+                                <div class="summary">
+                                    　　这首歌，叫《心酸的打工者》。我在微信群里看到的，听到第三句时，我便眼已润，接着一句更是让我泪线崩断，以致于不能自控到曲终。　　听完歌曲，我的大脑风云翻卷，那无奈的悲怆，那
+                                </div>
+                            </dd>
+
+                        </dl>
+                        <ul class="commonlist">
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=169924"
+                                    target="_blank">刘振起：这首歌让我泪目</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=170146"
+                                    target="_blank">七绝-楼上写诗</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=170143"
+                                    target="_blank">珠穆朗玛峰</a></li>
+                            <li><a class="elite_4"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=170122"
+                                    target="_blank">王忠新：一对“马镫”何以为顶级国宝？！</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=170115"
+                                    target="_blank">朝鲜：培养造就得力的民族音乐艺术家</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=170075"
+                                    target="_blank">七律-行路一律</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=170074"
+                                    target="_blank">红罗嫂和儿媳的故事</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=170073"
+                                    target="_blank">致国粉—党国余孽</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=170013"
+                                    target="_blank">纪念毛主席诞辰129周年</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=169995"
+                                    target="_blank">风云</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=170020"
+                                    target="_blank">旧笺</a></li>
+                            <li><a class="elite_3"
+                                    href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=19&id=169979"
+                                    target="_blank">《骆驼祥子》小福子之死</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mainRight">
+                <div class="rbox border">
+                    <div class="classTitle4">
+                        <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=20" target="_blank">经典讲座</a></h2>
+                        <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=20"
+                                target="_blank">>></a></span>
+                    </div>
+                    <ul class="commonlist">
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=168038"
+                                target="_blank">张宏良：九九缅怀伟大领袖毛主席</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=167818"
+                                target="_blank">弘毅生态农业系列讲座第22讲：关于生态农业的十个真相</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=166155"
+                                target="_blank">张宏良：另一个世界是可行的就是指毛主席带领我们探索的大众政治</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=166121"
+                                target="_blank">张文茂同志谈毛泽东的社会主义城乡关系发展战略！ ​</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=165809"
+                                target="_blank">张宏良：中国人民最先走上了反思道路的原因</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=165553"
+                                target="_blank">民族复兴网《共产党宣言》系列讲座心得交流会郝老师总结讲话</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=165057"
+                                target="_blank">民族复兴网《宣言 》系列讲座第四讲</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=164821"
+                                target="_blank">民族复兴网《共产党宣言 》系列讲座第三讲</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=164567"
+                                target="_blank">民族复兴网《共产党宣言 》系列讲座第二讲</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=164116"
+                                target="_blank">民族复兴网《共产党宣言 》系列讲座第一讲</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=163500"
+                                target="_blank">听孔和尚讲：毛主席是经济学大师</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=163281"
+                                target="_blank">孔和尚讲：先觉者与群众的关系</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=163285"
+                                target="_blank">摩罗：《中国文化复兴和民族崛起》</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=163284"
+                                target="_blank">蒋高明：《生态农业与粮食安全》</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=20&id=159506"
+                                target="_blank">张宏良：纪念毛主席诞辰128周年讲座——用毛泽东的方式捍卫毛泽东</a></li>
+                    </ul>
+                </div>
+                <div class="rbox border">
+                    <div class="classTitle4">
+                        <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=8" target="_blank">网友杂谈</a></h2>
+                        <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=8"
+                                target="_blank">>></a></span>
+                    </div>
+                    <ul class="commonlist">
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170041"
+                                target="_blank">为什么我们今天的干部总和老百姓起冲突？</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170140"
+                                target="_blank">毛主席：我只要求干部一条，要把官僚架子放下，平等待人</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170139"
+                                target="_blank">毛主席：“决不许摆架子”！</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170120"
+                                target="_blank">欺诈者</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170117"
+                                target="_blank">李铁被调查实锤，足球反腐风暴或许刚刚开始</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170116"
+                                target="_blank">河南等地农民卖菜难，怎么办？</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170093"
+                                target="_blank">20万人被赋黄码，曲靖的回应站不住脚</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170092"
+                                target="_blank">幼儿园校长在家长群发不雅语音，师德教师不能有漏洞</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170067"
+                                target="_blank">核酸检测为啥交给第三方？</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170068"
+                                target="_blank">叹菜农毁菜，哀民生多艰！</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170066"
+                                target="_blank">咱们工人有力量的前提是团结</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170054"
+                                target="_blank">蔣介石“容光煥發，神採奕奕”？</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170040"
+                                target="_blank">夜幕下的疫情</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170051"
+                                target="_blank">城管执法跪压司机头部，鲜花执法永远不过时</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170050"
+                                target="_blank">安阳火灾事故，问责力度要大</a></li>
+                    </ul>
+                </div>
+                <div class="rbox border">
+                    <div class="classTitle4">
+                        <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=21" target="_blank">博文精选</a></h2>
+                        <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=21"
+                                target="_blank">>></a></span>
+                    </div>
+                    <ul class="commonlist">
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=170151"
+                                target="_blank">中方可考虑以“非对等”反制措施来严惩以美国为首的英语四国反华劣行</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=170119"
+                                target="_blank">陈中华：得民心者才能得天下，这是千古不变的铁律</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=170118"
+                                target="_blank">中国媒体应全面禁用西方发达国家一词</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=170053"
+                                target="_blank">一字千军纵论教训</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=170049"
+                                target="_blank">关于对外宣传的“不对称话语”问题</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=170046"
+                                target="_blank">人类语言“超能力”是否与生俱来？</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=170026"
+                                target="_blank">看看农民工是怎么睡觉的！</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=169825"
+                                target="_blank">一字千军论丛林法则</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=169823"
+                                target="_blank">陈中华：南街村不仅医疗免费，住房教育养老也免费</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=169822"
+                                target="_blank">郭台铭与清华大学的共性是扬短避长 自取其辱</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=169806"
+                                target="_blank">一字千军论香臭</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=169760"
+                                target="_blank">共产主义政治经济学ABC（2022版）</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=169764"
+                                target="_blank">在反颠覆斗争中增强骨气——二论增强志气骨气底气</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=169703"
+                                target="_blank">关注2022年诺贝尔物理学奖——量子“纠缠”出了什么</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=21&id=169578"
+                                target="_blank">明德先生 | 夜色下的什刹海：卖糖葫芦的共享单车！</a></li>
+                    </ul>
+                </div>
+
+                <div class="rbox border">
+                    <div class="classTitle4">
+                        <h2><a href="#">热点排行</a></h2>
+                    </div>
+                    <ol class="rank">
+                        <li class="top1"><span>1</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=8&id=170041"
+                                target="_blank">为什么我们今天的干部总和老百姓起冲突？</a></li>
+                        <li class="top2"><span>2</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170071"
+                                target="_blank">“中国超算”的创新之路</a></li>
+                        <li class="top3"><span>3</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=169978"
+                                target="_blank">不要试图把格瓦拉同志拉进自己的修正主义阵营</a></li>
+                        <li class="top4"><span>4</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170080"
+                                target="_blank">张宏良：不要难为钟南山</a></li>
+                        <li class="top5"><span>5</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170017"
+                                target="_blank">孔庆东：到底是什么原因进退两难</a></li>
+                        <li class="top6"><span>6</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170044"
+                                target="_blank">我们有信仰吗？</a></li>
+                        <li class="top7"><span>7</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=169997"
+                                target="_blank">林治波：这个世界不是没有阴谋，而是有惊天大阴谋！</a></li>
+                        <li class="top8"><span>8</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=169990"
+                                target="_blank">林治波：郑重建议将所有核酸公司收归国有</a></li>
+                        <li class="top9"><span>9</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170006"
+                                target="_blank">孔庆东：恋爱给谁看啊？——2022年7月下旬的微博问答</a></li>
+                        <li class="top10"><span>10</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=13&id=170079"
+                                target="_blank">张宏良：中国革命青年的伟大先驱毛岸英烈士永垂不朽！</a></li>
+                        <li class="top11"><span>11</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=12&id=170033"
+                                target="_blank">我们不理睬它：斯大林为何敢不执行托洛茨基的电报命令？</a></li>
+                        <li class="top12"><span>12</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=169992"
+                                target="_blank">朝鲜外相：你就是美国的傀儡！美国一直挑衅，你怎么不吭声？</a></li>
+                        <li class="top13"><span>13</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=15&id=170022"
+                                target="_blank">黄兴国：底层人民的苦，不能视而不见！</a></li>
+                        <li class="top14"><span>14</span><a class="elite_4"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=17&id=169984"
+                                target="_blank">金正恩携妻儿现场指导导弹试射透露了什么重磅信息？</a></li>
+                        <li class="top15"><span>15</span><a class="elite_3"
+                                href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=11&id=170058"
+                                target="_blank">不能忘记：计划经济国营企业如何被搞垮颠覆？</a></li>
+                    </ol>
+                </div>
+                <div class="rbox border">
+                    <div class="classTitle4">
+                        <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=25" target="_blank">红色校园</a></h2>
+                        <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=25"
+                                target="_blank">>></a></span>
+                    </div>
+                    <ul class="commonlist">
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=25&id=170045"
+                                target="_blank">钱学森的信仰是如何树立的</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=25&id=169921"
+                                target="_blank">“世界是你们的”——毛主席对青年期望什么、寄托什么？</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=25&id=169817"
+                                target="_blank">一字千军论人的猫性</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=25&id=169683"
+                                target="_blank">一字千军论人与星</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=25&id=169715"
+                                target="_blank">一字千军论人与地球</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=25&id=169706"
+                                target="_blank">从学生在“校园农场”体验丰收农忙说起</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=25&id=169625"
+                                target="_blank">一字千军论人与太阳</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=25&id=169599"
+                                target="_blank">一字千军论人与月</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=25&id=169603"
+                                target="_blank">今天，我们依旧要庆祝十月革命的成功！</a></li>
+                        <li><a class="elite_3" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=25&id=169461"
+                                target="_blank">一字千军论人与风</a></li>
+                    </ul>
+                </div>
+
+                <div class="rbox border">
+                    <div class="classTitle4">
+                        <h2><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=22" target="_blank">站内公告</a></h2>
+                        <span class="more"><a href="https://www.mzfxw.com/e/action/ListInfo/?classid=22"
+                                target="_blank">>></a></span>
+                    </div>
+                    <ul class="commonlist">
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=22&id=166179"
+                                target="_blank">张宏良：民族复兴网聘任群管理员公告</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=22&id=153798"
+                                target="_blank">民族复兴网聘任法律顾问</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=22&id=143029"
+                                target="_blank">民族复兴网关于马克思主义经典作家语录群的公告</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=22&id=142072"
+                                target="_blank">民族复兴网公告：请把民族复兴网的图标放在手机桌面</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=22&id=57622"
+                                target="_blank">敬告：阅读被屏蔽文章的方法</a></li>
+                        <li><a class="elite_4" href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=22&id=1169"
+                                target="_blank">免责声明</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="friendLink" class="section">
+            <h2>关注网址</h2>
+            <ul class="border clearfix ">
+                <li><a href="http://www.hswh.org.cn/" target="_blank">红色文化网</a></li>
+                <li><a href="http://www.maoflag.cc/portal.php" target="_blank">毛泽东思想旗帜网</a></li>
+                <li><a href="http://www.mzdlib.com" target="_blank">韶山毛泽东图书馆网</a></li>
+                <li><a href="http://www.cac.gov.cn/" target="_blank">中央网信办</a></li>
+                <li><a href="http://www.ccdi.gov.cn/" target="_blank">中央纪委监察部网</a></li>
+                <li><a href="http://www.xinhuanet.com/" target="_blank">新华网</a></li>
+                <li><a href="http://www.chinanews.com/" target="_blank">中国新闻网</a></li>
+                <li><a href="http://www.dexiangtanjing.com" target="_blank">山东得象碳晶公司</a></li>
+                <li><a href="http://www.crt.com.cn/" target="_blank">中红网</a></li>
+                <li><a href="http://www.wyzxwk.com" target="_blank">乌有之乡网刊</a></li>
+                <li><a href="http://www.szhgh.com/" target="_blank">红歌会网</a></li>
+                <li><a href="http://www.people.com.cn/" target="_blank">人民网</a></li>
+                <li><a href="http://www.qstheory.cn/" target="_blank">求是理论网</a></li>
+                <li><a href="http://www.kcna.kp/" target="_blank">朝鲜中央通讯</a></li>
+                <li><a href="https://www.childforge.com" target="_blank">教而有方轻社区</a></li>
+                <li><a href="http://www.81.cn/" target="_blank">中国军网</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer" class="wid">
+        <div id="navbottom">
+            <a href="#">联系我们</a>&nbsp;|
+            <a href="#">版权声明</a>&nbsp;|
+            <a href="#">关于我们</a>&nbsp;|
+            <a href="https://www.webbig.cn" target='_blank'>技术支持</a>&nbsp;
+        </div>
+        <div class="icp">
+            <p>邮箱fuxingwang010@163.com QQ：1871890239</p>
+            <p><a href="https://beian.miit.gov.cn" target="_blank">京ICP备13048339号-1</a></p>
+            <p>Copyright © 2013-2015&nbsp;复兴网&nbsp;版权所有&nbsp;&nbsp;</p>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138887341-3"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-138887341-3');
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

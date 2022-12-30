@@ -1,0 +1,87 @@
+.grid {
+    margin-bottom: 5px;
+    grid-template-columns: 150px 150px 50px;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 40px 25px;
+}
+
+.mg-icircle {
+    top: 0;
+    text-align: center;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 500px;
+    padding-bottom: 100%;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.carousel {
+    width: 100%;
+    height: 500px;
+}
+
+
+.carousel-inner>.item>img {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.school-introduce img {
+    width: 100%;
+    height: 100px;
+    padding-left: 450px;
+    padding-right: 450px;
+}
+
+.main {
+    width: 100%;
+}
+
+.main-context {
+    margin: auto;
+    left: 200px;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80%;
+    align-items: center;
+    box-shadow: 0 0 15px #3f887c;
+    flex-direction: column;
+    background: url(../images/校园门口.jpg);
+}
+
+.main-box>p {
+    width: 90%;
+    text-indent: 30px;
+    line-height: 2;
+}
+
+.main-context>p {
+    padding: 20px;
+    text-indent: 2em;
+    text-align: left;
+    font-size: 24px;
+    color: white;
+
+}
+
+div {
+    display: block;
+}
+
+#footer {
+    color: purple;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
